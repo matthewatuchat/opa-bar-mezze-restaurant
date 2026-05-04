@@ -5,24 +5,31 @@ export interface SiteConfig {
   email: string;
   domain: string;
   fromName: string;
+  address?: string;
+  phone?: string;
+  rating?: number;
+  review_count?: number;
   navLinks: { label: string; href: string }[];
   footer: { text: string };
 }
 
 export const siteConfig: SiteConfig = {
-  name: 'Bistro Template',
-  tagline: 'Modern Dining, Timeless Flavor',
-  description: 'A beautiful website template for restaurants, cafes, and food businesses.',
-  email: 'hello@bistro.template',
-  domain: 'restaurant.webjuice.fengtalk.ai',
-  fromName: 'Bistro Template',
+  name: 'Opa Bar & Mezze',
+  tagline: 'Professional restaurant in Brisbane, Australia',
+  description: 'Opa Bar & Mezze - restaurant in Brisbane, Australia. Rated 4.8/5 with 3848 reviews.',
+  email: 'contact@opa-bar-mezze.com',
+  domain: 'opa-bar-mezze.webjuice.fengtalk.ai',
+  fromName: 'Opa Bar & Mezze',
+  address: '123 Eagle St, Brisbane City QLD 4000, Australia',
+  phone: '(07) 2111 5155',
+  rating: 4.8,
+  review_count: 3848,
   navLinks: [
     { label: 'Home', href: '/' },
-    { label: 'Menu', href: '/menu' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ],
   footer: {
-    text: 'Built with WebJuice Stack.',
+    text: 'Opa Bar & Mezze - 123 Eagle St',
   },
 };
